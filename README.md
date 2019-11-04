@@ -14,11 +14,11 @@ Alternatively, here's the list of the exercises and solutions on Codepen/CodeSan
 
 ### Exercide 02 - CSS Ghost loop refactor
  1. Starting code: [bit.ly/cssghost](bit.ly/cssghost)
- 2. Solution: [bit.ly/cssghost2(bit.ly/cssghost2)
+ 2. Solution: [bit.ly/cssghost2](bit.ly/cssghost2)
 
 ### Exercide 03 - Transition tag Dialog 
  1. Starting code: [bit.ly/vuedialog](bit.ly/vuedialog)
- 2. Solution: [bit.ly/vuedialog2(bit.ly/vuedialog2)
+ 2. Solution: [bit.ly/vuedialog2](bit.ly/vuedialog2)
 
 ### Exercide 04 - Drawer menu transition
  1. Starting code: [bit.ly/vuemenu](bit.ly/vuemenu)
