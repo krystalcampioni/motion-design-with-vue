@@ -22,7 +22,7 @@ Alternatively, here's the list of the exercises and solutions on Codepen/CodeSan
 
 ### Exercide 04 - Drawer menu transition
  1. Starting code: [bit.ly/vuemenu](bit.ly/vuemenu)
- 2. Solution: [bit.ly/vuemenu2(bit.ly/vuemenu2)
+ 2. Solution: [bit.ly/vuemenu2](bit.ly/vuemenu2)
 
 ### Exercide 05 - Group transition
  1. Starting code: [bit.ly/grouptransition](bit.ly/grouptransition)
