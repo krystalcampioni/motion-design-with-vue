@@ -1,0 +1,9 @@
+.path {
+  transform: scale(.5);
+/*   stroke-dasharray: 15000;
+  stroke-dashoffset: 15000; */
+/*    
+  If you'd like to know where this number comes from, check:
+  https://developer.mozilla.org/en-US/docs/Web/API/SVGPathElement/getTotalLength
+*/
+}

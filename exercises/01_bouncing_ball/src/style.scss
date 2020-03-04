@@ -1,0 +1,65 @@
+$main-color: #1bcdd0;
+$gray: #ebebeb;
+$dark-gray: #1d1f20;
+$black: #000;
+
+*, 
+*::after, 
+*::before { 
+  box-sizing:  border-box;
+}
+
+body {
+  font-family: 'Cutive Mono';
+  text-align: center;
+}
+
+
+.sphere {
+  animation: bounce 1s linear infinite alternate;
+  transform-origin: bottom;
+  top: 20px;
+  left: 0;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: #3bf8fb;
+  border-radius: 50%;
+  box-shadow: 
+    inset 26px -37px 38px 42px rgba(5, 142, 144, 0.5), 
+    inset 9px -7px 35px -11px rgb(156, 250, 255), 
+    inset 28px -21px 58px 4px rgba(0, 0, 0, 0.73);
+    
+    
+}
+
+.shadow {
+  background: rgba(34, 110, 111, 0.57);
+  bottom: -20px;
+  border-radius: 50%;
+  position: absolute;
+  height: 14px;
+  width: 106px;
+  margin-top: -100px;
+  margin-left: calc(50% - 55px);
+  left: -25px;
+  content: '';
+  z-index: -1;
+  filter: blur(5px);
+}
+
+.wrapper { 
+  margin: 0 auto;
+  position: relative;
+  height: 500px;
+  width: 170px;
+}
+
+@keyframes bounce {
+  from {
+     transform: translateY(0)
+  }
+  to {
+     transform: translateY(350px)
+  }
+}

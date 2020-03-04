@@ -1,0 +1,42 @@
+$menuColSize: 450px;
+
+.menu {
+  position: fixed;
+  background: rgba(0, 14, 25, 0.9);
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-transform: uppercase;
+  z-index: 80;
+  width: $menuColSize;
+  right: 0;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    justify-content: space-between;
+    padding-left: 5vw;
+  }
+
+  &__listItem {
+    transition: all .5s ease-in-out;
+
+    a {
+      position: relative;
+      outline-offset: 0;
+      padding: 0px 10px;
+      line-height: 1.5;
+    }
+    
+    &--external svg {
+      top: 27px;
+      position: absolute;
+      margin-left: 5px;
+      stroke: $linkUnderline;
+    }
+  }
+}

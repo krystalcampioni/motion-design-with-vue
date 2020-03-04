@@ -1,0 +1,120 @@
+/* The version of Bourbon used in this Pen was 4.* */
+@import "bourbon";
+
+$blue: #162440; 
+$white: #fff;
+
+@keyframes float {
+  0% {transform: translate(0px, 0px) rotate(3deg)}
+  100% {transform: translate(10px, 30px) rotate(-3deg)}
+}
+
+@keyframes shadow {
+  0% {transform: scale(1.2, .5) translateX(8px)}
+  100% {transform: scale(1, .5) translateX(15px)}
+}
+
+@keyframes triangle {
+  0% { transform: scale(.5, .8)}
+  100% { transform: scale(.5, 1.2)}
+}
+
+@keyframes triangle-reversed {
+  0% { @include transform(scale(-.5, .8)) }
+  100% { @include transform(scale(-.5, 1.5)) }
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  background: $blue;
+  margin-top: 20vh;
+  padding: 0;
+}
+
+.ghost {
+  @include size(100px 150px);
+  animation: float 2.8s infinite alternate ease-in-out;
+  background: white;
+  border-radius: 50% 50% 0 0;
+  position: relative;
+  margin: 0 auto;
+  
+  &__shadow {
+    @include size(100px 5px);
+    box-shadow: 0 0 20px 30px;
+    animation: shadow 2.8s infinite alternate ease-in-out;
+    background: black;
+    position: relative;
+    margin: 0 auto;
+    top: 120px;
+    border-radius: 50%;
+    opacity: .4;
+  }
+  
+  &__eye {
+    @include size(40px);
+    background: black;
+    position: absolute;
+    border-radius: 50%;
+    
+    &::before {
+      @include size(10px);
+      background: rgba($white, .8);
+      border-radius: 50%;
+      top: 10px;
+      left: 10px;
+      content: '';
+      position: absolute;
+    }
+    
+    &::after {
+      @include size(5px);
+      background: rgba($white, .8);
+      border-radius: 50%;
+      top: 25px;
+      left: 25px;
+      content: '';
+      position: absolute;
+    }
+    
+    &--1 {
+      left: 50px;
+      top: 25px;
+    }
+    
+    &--2 {
+      left: 8px;
+      top: 30px;
+    }
+  }
+  
+  &__triangle {
+    @include transform(scale(0.5, 1));
+    @include size(40px);
+    background: white;
+    position: absolute;
+    border-radius: 0 0 30% 90%;
+    transform-origin: top left;
+    animation: triangle 1s infinite alternate ease-in-out;   
+    bottom: -39px;
+
+    // Refactor this into a loop that correctly adjusts the 
+    // left property of each triangle, and makes each triangle 
+    // play the animation sequentially
+    &--1 {
+      left: 0px;
+    }
+    &--2 {
+      left: 26.8px;
+    }
+    &--3 {
+      left: 53.6px;
+    }
+    &--4 {
+      left: 80.4px;
+    }
+  }
+}

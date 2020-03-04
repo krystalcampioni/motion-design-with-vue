@@ -33,7 +33,7 @@ Alternatively, here's the list of the exercises and solutions on Codepen/CodeSan
 ### Exercide 06 - Group transition
  1. Solution with custom FLIP animation: [bit.ly/grouptransition3](bit.ly/grouptransition3)
 
- ### Exercide 07 - Group transition with custom FLIP
+ ### Exercide 07 - Page transition
  1. Starting code: [bit.ly/pagetransitions](bit.ly/pagetransitions)
  2. Solution: [bit.ly/pagetransitions2](bit.ly/pagetransitions2)
 

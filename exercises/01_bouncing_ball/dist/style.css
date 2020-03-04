@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cutive Mono';
+  text-align: center;
+}
+
+.sphere {
+  -webkit-animation: bounce 1s linear infinite alternate;
+          animation: bounce 1s linear infinite alternate;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  top: 20px;
+  left: 0;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: #3bf8fb;
+  border-radius: 50%;
+  box-shadow: inset 26px -37px 38px 42px rgba(5, 142, 144, 0.5), inset 9px -7px 35px -11px #9cfaff, inset 28px -21px 58px 4px rgba(0, 0, 0, 0.73);
+}
+
+.shadow {
+  background: rgba(34, 110, 111, 0.57);
+  bottom: -20px;
+  border-radius: 50%;
+  position: absolute;
+  height: 14px;
+  width: 106px;
+  margin-top: -100px;
+  margin-left: calc(50% - 55px);
+  left: -25px;
+  content: '';
+  z-index: -1;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  height: 500px;
+  width: 170px;
+}
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(350px);
+            transform: translateY(350px);
+  }
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(350px);
+            transform: translateY(350px);
+  }
+}
