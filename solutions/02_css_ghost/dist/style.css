@@ -1,0 +1,191 @@
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translate(0px, 0px) rotate(3deg);
+            transform: translate(0px, 0px) rotate(3deg);
+  }
+  100% {
+    -webkit-transform: translate(10px, 30px) rotate(-3deg);
+            transform: translate(10px, 30px) rotate(-3deg);
+  }
+}
+@keyframes float {
+  0% {
+    -webkit-transform: translate(0px, 0px) rotate(3deg);
+            transform: translate(0px, 0px) rotate(3deg);
+  }
+  100% {
+    -webkit-transform: translate(10px, 30px) rotate(-3deg);
+            transform: translate(10px, 30px) rotate(-3deg);
+  }
+}
+@-webkit-keyframes shadow {
+  0% {
+    -webkit-transform: scale(1.2, 0.5) translateX(8px);
+            transform: scale(1.2, 0.5) translateX(8px);
+  }
+  100% {
+    -webkit-transform: scale(1, 0.5) translateX(15px);
+            transform: scale(1, 0.5) translateX(15px);
+  }
+}
+@keyframes shadow {
+  0% {
+    -webkit-transform: scale(1.2, 0.5) translateX(8px);
+            transform: scale(1.2, 0.5) translateX(8px);
+  }
+  100% {
+    -webkit-transform: scale(1, 0.5) translateX(15px);
+            transform: scale(1, 0.5) translateX(15px);
+  }
+}
+@-webkit-keyframes triangle {
+  0% {
+    -webkit-transform: scale(0.5, 0.8);
+            transform: scale(0.5, 0.8);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 1.2);
+            transform: scale(0.5, 1.2);
+  }
+}
+@keyframes triangle {
+  0% {
+    -webkit-transform: scale(0.5, 0.8);
+            transform: scale(0.5, 0.8);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 1.2);
+            transform: scale(0.5, 1.2);
+  }
+}
+@-webkit-keyframes triangle-reversed {
+  0% {
+    -webkit-transform: scale(-0.5, 0.8);
+    transform: scale(-0.5, 0.8);
+  }
+  100% {
+    -webkit-transform: scale(-0.5, 1.5);
+    transform: scale(-0.5, 1.5);
+  }
+}
+@keyframes triangle-reversed {
+  0% {
+    -webkit-transform: scale(-0.5, 0.8);
+    transform: scale(-0.5, 0.8);
+  }
+  100% {
+    -webkit-transform: scale(-0.5, 1.5);
+    transform: scale(-0.5, 1.5);
+  }
+}
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  background: #162440;
+  margin-top: 20vh;
+  padding: 0;
+}
+
+.ghost {
+  height: 150px;
+  width: 100px;
+  -webkit-animation: float 2.8s infinite alternate ease-in-out;
+          animation: float 2.8s infinite alternate ease-in-out;
+  background: white;
+  border-radius: 50% 50% 0 0;
+  position: relative;
+  margin: 0 auto;
+}
+.ghost__shadow {
+  height: 5px;
+  width: 100px;
+  box-shadow: 0 0 20px 30px;
+  -webkit-animation: shadow 2.8s infinite alternate ease-in-out;
+          animation: shadow 2.8s infinite alternate ease-in-out;
+  background: black;
+  position: relative;
+  margin: 0 auto;
+  top: 120px;
+  border-radius: 50%;
+  opacity: .4;
+}
+.ghost__eye {
+  height: 40px;
+  width: 40px;
+  background: black;
+  position: absolute;
+  border-radius: 50%;
+}
+.ghost__eye::before {
+  height: 10px;
+  width: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  top: 10px;
+  left: 10px;
+  content: '';
+  position: absolute;
+}
+.ghost__eye::after {
+  height: 5px;
+  width: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  top: 25px;
+  left: 25px;
+  content: '';
+  position: absolute;
+}
+.ghost__eye--1 {
+  left: 50px;
+  top: 25px;
+}
+.ghost__eye--2 {
+  left: 8px;
+  top: 30px;
+}
+.ghost__triangle {
+  -webkit-transform: scale(0.5, 1);
+  transform: scale(0.5, 1);
+  height: 40px;
+  width: 40px;
+  background: white;
+  position: absolute;
+  border-radius: 0 0 30% 90%;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+.ghost__triangle--1 {
+  -webkit-animation: triangle 1s infinite alternate ease-in-out;
+          animation: triangle 1s infinite alternate ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  bottom: -39px;
+  left: 0px;
+}
+.ghost__triangle--2 {
+  -webkit-animation: triangle 1s infinite alternate ease-in-out;
+          animation: triangle 1s infinite alternate ease-in-out;
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+  bottom: -39px;
+  left: 26.8px;
+}
+.ghost__triangle--3 {
+  -webkit-animation: triangle 1s infinite alternate ease-in-out;
+          animation: triangle 1s infinite alternate ease-in-out;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  bottom: -39px;
+  left: 53.6px;
+}
+.ghost__triangle--4 {
+  -webkit-animation: triangle 1s infinite alternate ease-in-out;
+          animation: triangle 1s infinite alternate ease-in-out;
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+  bottom: -39px;
+  left: 80.4px;
+}

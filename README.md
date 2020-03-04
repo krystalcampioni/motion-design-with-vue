@@ -8,7 +8,7 @@ This repo contains the exercises for my full-day workshop.
 ▶️ Or view an HTML version of the slides here: [krystalcampioni.github.io/motion-design-with-vue](https://krystalcampioni.github.io/motion-design-with-vue/assets/player/KeynoteDHTMLPlayer.html#1)
 
 ## Exercises
-Clone the repo for a local version of the exercises. The answers are in the `solutions` branch.
+Clone the repo for a local version of the exercises. The answers are in the `solutions` folder.
 
 Alternatively, here's the list of the exercises and solutions on Codepen/CodeSandbox
 

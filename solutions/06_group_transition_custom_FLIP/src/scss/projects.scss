@@ -1,0 +1,70 @@
+$base-color: #a7d627;
+$percentage: 15;
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: 0.4s opacity ease-out;
+}
+
+.projectCard {
+  will-change: transform;
+  transition: transform 0.5s ease;
+  position: relative;
+  height: 100%;
+  background-color: $base-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__ghost {
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+    height: 143px;
+    background: rgba($base-color, .5);
+    transition: transform 0.5s ease;
+
+    @for $i from 2 to 16 {
+      $percentage: $i * 10;
+        
+      &:nth-child(#{$i}) div{
+        background-color: adjust-hue( $base-color, $percentage );
+      }
+    }
+  }
+
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+
+  &--selected {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 588px;
+    height: 286px;
+    margin: 0 auto;
+    z-index: 200;
+    top: 0;
+    margin-top: calc(50% - 180px);
+  }
+}
+
+
+
+.projectView {
+  &__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 14, 25, 0.9);
+    color: $white;
+    z-index: 100;
+  }
+}
