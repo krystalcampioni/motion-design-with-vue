@@ -1,7 +1,9 @@
 # Motion Design with Vue
-This repo contains the slides and exercises for my full-day workshop Motion Design with Vue, recently presented at Vue London.
-
 ![Exercise example with alien spaceship](https://krystalcampioni.com/workshop_cover.png)
+
+This repo contains the exercises for my full-day workshop.
+
+▶️ You can download the slides here: [bit.ly/motiondesignslides](http://bit.ly/motiondesignslides)
 
 ## Exercises
 Clone the repo for a local version of the exercises. The answers are in the `solutions` branch.
@@ -26,10 +28,21 @@ Alternatively, here's the list of the exercises and solutions on Codepen/CodeSan
 
 ### Exercide 05 - Group transition
  1. Starting code: [bit.ly/grouptransition](bit.ly/grouptransition)
- 2. Solution 1 with transition-group tag: [bit.ly/grouptransition2](bit.ly/grouptransition2)
- 3. Solution 2 with custom FLIP animation: [bit.ly/grouptransition3](bit.ly/grouptransition3)
+ 2. Solution with transition-group tag: [bit.ly/grouptransition2](bit.ly/grouptransition2)
 
-### Exercide 06 - Vue + Canvas
+### Exercide 06 - Group transition
+ 1. Solution with custom FLIP animation: [bit.ly/grouptransition3](bit.ly/grouptransition3)
+
+ ### Exercide 07 - Group transition with custom FLIP
+ 1. Starting code: [bit.ly/pagetransitions](bit.ly/pagetransitions)
+ 2. Solution: [bit.ly/pagetransitions2](bit.ly/pagetransitions2)
+
+### Exercide 08 - Vue + Canvas
  1. Starting code: [bit.ly/vuebubbles](bit.ly/vuebubbles)
+ 2. Solution: [bit.ly/vuebubbles2](bit.ly/vuebubbles2)
+
+ ### Exercide 09 - SVG path drawing
+ 1. Starting code: [bit.ly/svgpath1](bit.ly/svgpath1)
+ 2. Solution: [bit.ly/svgpath2](bit.ly/svgpath2)
 
 
