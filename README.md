@@ -5,6 +5,8 @@ This repo contains the exercises for my full-day workshop.
 
 ▶️ You can download the slides here: [bit.ly/motiondesignslides](http://bit.ly/motiondesignslides)
 
+▶️ Or view an HTML version of the slides here: [krystalcampioni.github.io/motion-design-with-vue](https://krystalcampioni.github.io/motion-design-with-vue/assets/player/KeynoteDHTMLPlayer.html#1)
+
 ## Exercises
 Clone the repo for a local version of the exercises. The answers are in the `solutions` branch.
 
